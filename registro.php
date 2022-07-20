@@ -11,7 +11,7 @@ include 'molop/mconfig.php';
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title><?= $nome . ' ' .  $descricao ?></title>
+    <title><?= $nome . ' |  Crie sua conta | ' .  $descricao ?></title>
   </head>
   <body>
    
@@ -35,22 +35,49 @@ include 'molop/nav.php'; ?>
     </div>
     <div class="col">
       <form>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Faça login</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">Insira seu e-mail.</div>
+
+         <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Insira seu nome completo</label>
+    <input type="text" class="form-control" id="exampleInputPassword1">
   </div>
+
+
+
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Insira seu e-mail </label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+  </div>
+
+   
+
+
+
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Senha</label>
     <input type="password" class="form-control" id="exampleInputPassword1">
   </div>
+
+   <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Repita sua Senha</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+
+
+
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Número de celular</label>
+    <input type="password" placeholder="+55 (DDD) 1821-2991" class="form-control" id="exampleInputPassword1">
+  </div>
   
-  <button type="submit" class="btn btn-success">Entrar</button>
+  <button type="submit" class="btn btn-success">Criar minha conta</button>
+  <button type="submit" class="btn btn-danger">Cancelar</button>
 
 
 
-  <a class="btn btn-danger" href="/registro.php">Criar uma conta
-</a>
+  
 </form>
     </div>
     
